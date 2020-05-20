@@ -1,0 +1,92 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=numberLimiter] {
+    -moz-appearance: textfield;
+    font-size: 3rem;
+    font-family: 'DM Mono', monospace;
+    font-weight: bold;
+    outline: none;
+    margin-left: 8px;
+}
+input:focus {
+    outline:none
+}
+
+
+:root {
+    --borderColor:#333;
+    --borderSize: 5px;
+    --squareSize: 72px;
+    --font: 'DM Mono', monospace; 
+  }
+
+.square {
+    height: var(--squareSize);
+    width: var(--squareSize);
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+
+}
+
+.left {
+    border-left: none;
+    border-left: var(--borderSize) solid var(--borderColor);
+}
+
+.right {
+    border-right: none;
+    border-right: var(--borderSize) solid var(--borderColor);
+}
+
+.top {
+    border-top: none;
+    border-top: var(--borderSize) solid var(--borderColor);
+}
+
+.bottom {
+    border-bottom: none;
+    border-bottom: var(--borderSize) solid var(--borderColor);
+}
+
+.margin-fix-left {
+    margin-left: -3px;
+    width: calc(var(--squareSize) + 3px);
+}
+
+.margin-fix-top {
+    margin-top: -3px;
+    height: calc(var(--squareSize) + 3px);
+}
+
+.inputField {
+    height: 70px;
+    width: 50%;
+    background: none;
+    border: none; 
+ }
+
+.inputField-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    outline: none;
+    color: #806459;
+}
+
+.incorrect {
+    background: red;
+}
+
+.solved {
+    background: rgb(28,184,65, .5);
+}
